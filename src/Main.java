@@ -1,4 +1,4 @@
-import model.Student;
+import model.classAndObject.Student;
 
 /**
  * 创建学生类实例
@@ -10,6 +10,7 @@ import model.Student;
  */
 public class Main {
     public static void main(String[] args) {
+        // Class And Object Test
         Student student = new Student("Elio", 22, "男", "001");
         System.out.println(student.toString());
     }
