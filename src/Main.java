@@ -1,5 +1,7 @@
 import model.classAndObject.Student;
 import model.inheritance.Tiger;
+import model.polymorphism.BlackAndWhitePrinter;
+import model.polymorphism.ColorPrinter;
 
 /**
  * 创建学生类实例
@@ -16,7 +18,12 @@ public class Main {
 //        System.out.println(student.toString());
         // Inheritance Test
         Tiger tiger = new Tiger(5, 20.0f);
-        System.out.println(tiger.toString());;
-        tiger.sound();
+//        System.out.println(tiger.toString());
+//        tiger.sound();
+        // Polymorphism Test
+        ColorPrinter colorPrinter = new ColorPrinter();
+        colorPrinter.print();
+        BlackAndWhitePrinter blackAndWhitePrinter = new BlackAndWhitePrinter();
+        blackAndWhitePrinter.print();
     }
 }
